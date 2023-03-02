@@ -28,6 +28,204 @@
   color: #61dafb;
 }
 
+.btndivblink{
+  
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 800px;
+  height: 400px;
+  margin-top: 100px;
+ 
+
+}
+.btndivblink_wall{
+  
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 800px;
+  height: 400px;
+ 
+ 
+
+}
+.btnblink_wall{
+  flex: 1;
+  margin-bottom: 20px;
+  
+  margin-left: 600px;
+
+}
+.btnblink{
+  flex: 1;
+  margin-bottom: 20px;
+  margin-top: 150px;
+
+}
+.colordiv{
+  display: none;
+  
+  
+  height: 200px;
+  width: 600px;
+
+}
+.shadesdiv{
+  flex: 3;
+ 
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  display: none;
+  z-index: 0;
+}
+.shadesdiv_wall{
+  flex: 3;
+ 
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  display: none;
+  z-index: 0;
+  border: 1px solid red;
+  
+}
+.mainimage1{
+  display: none;
+}
+.mainimage2{
+  display: none;
+}
+.mainimage3{
+  display: none;
+}
+.wallimage2{
+ display: none;
+}
+
+.wallimage3{
+  display: none;
+}
+.shades{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  flex-wrap: wrap;
+
+  margin: 10px;
+  
+}
+.shades>*{
+  flex : 1 1 auto;
+  width: 100px;
+  height: 60px;
+ 
+  margin: 10px;
+
+}
+.shades_wall{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  flex-wrap: wrap;
+
+  margin: 10px;
+  
+}
+.shades_wall>*{
+  flex : 1 1 auto;
+  width: 100px;
+  height: 60px;
+ 
+  margin: 10px;
+
+}
+.closebutton{
+  flex: 1;
+}
+.closebutton_wall{
+  flex: 1;
+}
+
+.hm{
+  background: url("/public/images/Office\ 2\ Main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% ;
+
+ 
+  
+}
+.imagediv{
+  
+  margin-top: -400px;
+
+  
+  
+  
+ 
+}
+.walldiv{
+  margin-top: -778px;
+  margin-left: -2px;
+}
+
+.circlenew_wall, .circlenew_wall::before {
+  content: " ";
+  margin: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.3s;
+  background-color: #FF0055;
+}
+
+.circlenew_wall::before {
+  animation: mymove 2s infinite;
+  position: absolute;
+  background-color: #00FF00;
+  margin-left: -8px;
+  cursor: pointer;
+  
+}
+
+
+.circlenew, .circlenew::before {
+  content: " ";
+  margin: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.3s;
+  background-color: #FF0055;
+}
+
+.circlenew::before {
+  animation: mymove 2s infinite;
+  position: absolute;
+  background-color: #00FF00;
+  margin-left: -8px;
+  cursor: pointer;
+  
+}
+
+@keyframes mymove {
+  50%   {
+    transform: scale(2);
+    opacity: 0
+  }
+  100%   {
+    transform: scale(2);
+    opacity: 0
+  }
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
